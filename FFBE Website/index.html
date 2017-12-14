@@ -3,6 +3,12 @@
   <head>
     <title>FFBE HTML Project - Home Page</title>
     <link href="style.css" type="text/css" rel="stylesheet">
+
+    <style>
+      p {
+        color:red;
+      }
+    </style>
   </head>
 
   <body>
@@ -15,9 +21,9 @@
     
     <div id="unitSearchForm">
       <h3>Unit Search</h3>
-      <em>Forms are currently non-functional</em>
+      <span style="color:blueviolet; font-style:italic;">Forms are currently non-functional</span>
 
-      <p>Search by unit Name:</p>
+      <p style="color:orange;">Search by unit Name:</p>
       <form action="process.php" method="GET">
         <input type="text" name="unitName">
         <br><input type="submit" value="Search" name="unitNameSearch">
