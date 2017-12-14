@@ -12,41 +12,43 @@
 		</nav>
 		
     <h1>FFBE HTML Project</h1>
+    
+    <div id="unitSearchForm">
+      <h3>Unit Search</h3>
+      <em>Forms are currently non-functional</em>
 
-    <h3>Unit Search</h3>
-    <em>Forms are currently non-functional</em>
+      <p>Search by unit Name:</p>
+      <form action="process.php" method="GET">
+        <input type="text" name="unitName">
+        <br><input type="submit" value="Search" name="unitNameSearch">
+      </form>
 
-    <p>Search by unit Name:</p>
-    <form action="process.php" method="GET">
-      <input type="text" name="unitName">
-      <br><input type="submit" value="Search" name="unitNameSearch">
-    </form>
-
-    <p>Search by Unit role and rarity:</p>
-    <form action="process.php" method="GET">
-      Highest Rarity Possible:
-      <select name="rarity">
-        <option value="1 star">1 star</option>
-        <option value="2 star">2 star</option>
-        <option value="3 star">3 star</option>
-        <option value="4 star">4 star</option>
-        <option value="5 star">5 star</option>
-        <option value="6 star">6 star</option>
-      </select>
-      <br>
-      Role:
-      <p></p> 
-      <input type="checkbox" name="healing"> Healing
-      <br>
-      <input type="checkbox" name="magic"> Magic Damage
-      <br>
-      <input type="checkbox" name="physical"> Physical Damage
-      <br>
-      <input type="checkbox" name="support"> Support
-      <br>
-      <input type="checkbox" name="tank"> Tank
-      <br>
-      <input type="submit" value="Search" name="rarityRoleSearch">
-    </form>
+      <p>Search by Unit role and rarity:</p>
+      <form action="process.php" method="GET">
+        Highest Rarity Possible:
+        <select name="rarity">
+          <option value="1 star">1 star</option>
+          <option value="2 star">2 star</option>
+          <option value="3 star">3 star</option>
+          <option value="4 star">4 star</option>
+          <option value="5 star">5 star</option>
+          <option value="6 star">6 star</option>
+        </select>
+        <br>
+        Role:
+        <p></p> 
+        <input type="checkbox" name="healing"> Healing
+        <br>
+        <input type="checkbox" name="magic"> Magic Damage
+        <br>
+        <input type="checkbox" name="physical"> Physical Damage
+        <br>
+        <input type="checkbox" name="support"> Support
+        <br>
+        <input type="checkbox" name="tank"> Tank
+        <br>
+        <input type="submit" value="Search" name="rarityRoleSearch">
+      </form>
+    </div>
   </body>
 </html>
